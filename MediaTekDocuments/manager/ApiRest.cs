@@ -2,6 +2,8 @@
 using System.Net.Http;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using MySql.Data.MySqlClient;
+using System.Collections.Generic;
 
 
 namespace MediaTekDocuments.manager
@@ -90,10 +92,8 @@ namespace MediaTekDocuments.manager
                     return new JObject();
             }
             // récupération de l'information retournée par l'api
-            //return httpResponse.Content.ReadAsAsync<JObject>().Result;
             return JsonConvert.DeserializeObject<JObject>(httpResponse.Content.ReadAsStringAsync().Result);
 
         }
-
     }
 }

@@ -21,6 +21,5 @@ namespace MediaTekDocuments.model
             this.IdEtat = idEtat;
             this.Id = idDocument;
         }
-
     }
 }

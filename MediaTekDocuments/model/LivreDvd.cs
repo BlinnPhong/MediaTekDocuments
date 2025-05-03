@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace MediaTekDocuments.model
 {
     /// <summary>
@@ -11,6 +13,5 @@ namespace MediaTekDocuments.model
             : base(id, titre, image, idGenre, genre, idPublic, lePublic, idRayon, rayon)
         {
         }
-
     }
 }
